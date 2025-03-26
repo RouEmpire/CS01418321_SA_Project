@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #FFFF99;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="administration.controllers.Orders2_Controller">
+   <children>
+      <Label layoutX="556.0" layoutY="79.0" prefHeight="81.0" prefWidth="168.0" text="Orders">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <Button layoutX="99.0" layoutY="872.0" mnemonicParsing="false" onAction="#handleBackPointButton" prefHeight="66.0" prefWidth="135.0" text="Back" />
+      <TableView fx:id="ordersTableView" layoutX="234.0" layoutY="214.0" prefHeight="442.0" prefWidth="837.0" />
+      <TextField fx:id="orderID" layoutX="372.0" layoutY="719.0" prefHeight="31.0" prefWidth="94.0" />
+      <Label layoutX="227.0" layoutY="664.0" prefHeight="31.0" prefWidth="264.0" text="UpdateStatus by Production">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="719.0" prefHeight="31.0" prefWidth="108.0" text="รหัสออเดอร์:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="487.0" layoutY="719.0" prefHeight="31.0" prefWidth="76.0" text="สถานะ:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="status" layoutX="558.0" layoutY="719.0" prefHeight="31.0" prefWidth="94.0" />
+      <Label layoutX="679.0" layoutY="724.0" text="**-1 = ไม่มีสินค้า| 0 = มีการสั่งสื้อสินค้า | 1= มีสินค้า | 2 = เบิกของและแจ้งว่ามีสินค้า | 3 = ส่งสินค้า**" />
+      <Button layoutX="250.0" layoutY="760.0" mnemonicParsing="false" onAction="#handleUpdatePointButton" prefHeight="31.0" prefWidth="108.0" text="Update" />
+      <Label fx:id="error" layoutX="372.0" layoutY="680.0" prefHeight="31.0" prefWidth="394.0" textFill="RED" />
+      <Label fx:id="error2" layoutX="556.0" layoutY="680.0" prefHeight="31.0" prefWidth="394.0" textFill="RED" />
+      <Label layoutX="232.0" layoutY="170.0" text="รหัสออเดอร์:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="search" layoutX="368.0" layoutY="172.0" prefHeight="31.0" prefWidth="246.0" />
+      <Button layoutX="626.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleSearchPointButton" prefHeight="31.0" prefWidth="98.0" text="ค้นหา" />
+      <Label fx:id="error3" layoutX="366.0" layoutY="139.0" prefHeight="31.0" prefWidth="394.0" textFill="RED" />
+      <Button layoutX="760.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleStatusMinus1Button" text="Status = -1" />
+      <Button layoutX="968.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleStatus2Button" text="Status = 2" />
+      <Button layoutX="862.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleStatus1Button" text="Status = 1" />
+      <Button layoutX="1077.0" layoutY="625.0" mnemonicParsing="false" onAction="#handleResetPointButton" prefHeight="31.0" prefWidth="88.0" text="Reset" />
+      <Button layoutX="1077.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleStatus0Button" text="Status = 0" />
+   </children>
+</AnchorPane>

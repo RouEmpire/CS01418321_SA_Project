@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1024.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="administration.controllers.Products2_Controller">
+   <children>
+      <AnchorPane prefHeight="1034.0" prefWidth="1290.0" style="-fx-background-color: #FFFF99;">
+         <children>
+            <Button layoutX="77.0" layoutY="871.0" mnemonicParsing="false" onAction="#handleBackPointButton" prefHeight="66.0" prefWidth="135.0" text="Back" />
+            <TableView fx:id="productsTableView" layoutX="222.0" layoutY="227.0" prefHeight="435.0" prefWidth="837.0" />
+            <Label layoutX="526.0" layoutY="78.0" prefHeight="81.0" prefWidth="229.0" text="Products">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+            <Label layoutX="222.0" layoutY="185.0" text="รหัสสินค้า:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="search" layoutX="330.0" layoutY="187.0" prefHeight="31.0" prefWidth="246.0" />
+            <Button layoutX="592.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleSearchPointButton" prefHeight="31.0" prefWidth="98.0" text="ค้นหา" />
+            <Label fx:id="error" layoutX="330.0" layoutY="159.0" prefHeight="21.0" prefWidth="262.0" textFill="RED" />
+            <Button layoutX="1099.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleResetPointButton" prefHeight="31.0" prefWidth="98.0" text="Reset" />
+            <Label layoutX="246.0" layoutY="672.0" text="UpdateProducts by Production">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="281.0" layoutY="731.0" prefHeight="31.0" prefWidth="108.0" text="รหัสสินค้า:">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productsID" layoutX="389.0" layoutY="731.0" prefHeight="31.0" prefWidth="94.0" />
+            <Label layoutX="496.0" layoutY="731.0" prefHeight="31.0" prefWidth="76.0" text="จำนวน:">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productsAM" layoutX="580.0" layoutY="731.0" prefHeight="31.0" prefWidth="94.0" />
+            <Label layoutX="699.0" layoutY="731.0" prefHeight="31.0" prefWidth="108.0" text="ชิ้น">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Button layoutX="281.0" layoutY="780.0" mnemonicParsing="false" onAction="#handleUpdatePointButton" prefHeight="31.0" prefWidth="108.0" text="Update" />
+            <Label fx:id="error1" layoutX="389.0" layoutY="703.0" prefHeight="31.0" prefWidth="394.0" textFill="RED" />
+            <Label fx:id="error2" layoutX="572.0" layoutY="703.0" prefHeight="31.0" prefWidth="394.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
